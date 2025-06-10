@@ -98,21 +98,15 @@ export function ManualSection() {
                 Aprende a usar la calculadora de amortización paso a paso con nuestro video tutorial completo.
               </p>
 
-              {/* Placeholder para video de YouTube */}
+              {/* Video de YouTube */}
               <div className="relative w-full h-0 pb-[56.25%] bg-gray-800 rounded-lg overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <Play className="h-16 w-16 text-white mb-4 mx-auto opacity-70" />
-                    <p className="text-white text-lg font-semibold">Video Tutorial</p>
-                    <p className="text-gray-300 text-sm mt-2">Aquí se insertará el video de YouTube</p>
-                    <div className="mt-4 p-3 bg-gray-700 rounded-lg">
-                      <p className="text-xs text-gray-300">Para insertar el video, reemplaza este div con:</p>
-                      <code className="text-xs text-blue-200 block mt-2">
-                        {'<iframe src="https://www.youtube.com/embed/VIDEO_ID" ...></iframe>'}
-                      </code>
-                    </div>
-                  </div>
-                </div>
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/vEE-6B1v41E"
+                  title="Tutorial de Calculadora de Amortización"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">

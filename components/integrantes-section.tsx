@@ -2,65 +2,17 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Users, Mail, Phone, MapPin, GraduationCap } from "lucide-react"
+import { Users, Mail, GraduationCap } from "lucide-react"
 
 export function IntegrantesSection() {
   const integrantes = [
     {
-      nombre: "Ana García Rodríguez",
-      rol: "Líder del Proyecto",
-      carrera: "Ingeniería Financiera",
-      semestre: "8vo Semestre",
-      email: "ana.garcia@universidad.edu",
-      telefono: "+52 555 123 4567",
-      ubicacion: "Ciudad de México, México",
-      especialidad: "Análisis Financiero y Modelado Matemático",
-      avatar: "/placeholder.svg?height=120&width=120",
-    },
-    {
-      nombre: "Carlos Mendoza Silva",
-      rol: "Desarrollador Frontend",
+      nombre: "Freddy Amin Zapata Morato",
       carrera: "Ingeniería en Sistemas",
-      semestre: "7mo Semestre",
-      email: "carlos.mendoza@universidad.edu",
-      telefono: "+52 555 234 5678",
-      ubicacion: "Guadalajara, México",
-      especialidad: "Desarrollo Web y Interfaces de Usuario",
+      email: "202105321@est.umss.edu",
       avatar: "/placeholder.svg?height=120&width=120",
     },
-    {
-      nombre: "María Elena Vásquez",
-      rol: "Analista Matemática",
-      carrera: "Matemáticas Aplicadas",
-      semestre: "8vo Semestre",
-      email: "maria.vasquez@universidad.edu",
-      telefono: "+52 555 345 6789",
-      ubicacion: "Monterrey, México",
-      especialidad: "Cálculo Actuarial y Estadística Financiera",
-      avatar: "/placeholder.svg?height=120&width=120",
-    },
-    {
-      nombre: "Roberto Jiménez López",
-      rol: "Especialista en UX/UI",
-      carrera: "Diseño Digital",
-      semestre: "6to Semestre",
-      email: "roberto.jimenez@universidad.edu",
-      telefono: "+52 555 456 7890",
-      ubicacion: "Puebla, México",
-      especialidad: "Experiencia de Usuario y Diseño de Interfaces",
-      avatar: "/placeholder.svg?height=120&width=120",
-    },
-    {
-      nombre: "Sofía Hernández Cruz",
-      rol: "Documentación y Testing",
-      carrera: "Ingeniería Industrial",
-      semestre: "7mo Semestre",
-      email: "sofia.hernandez@universidad.edu",
-      telefono: "+52 555 567 8901",
-      ubicacion: "Tijuana, México",
-      especialidad: "Gestión de Procesos y Control de Calidad",
-      avatar: "/placeholder.svg?height=120&width=120",
-    },
+    
   ]
 
   return (
@@ -113,37 +65,18 @@ export function IntegrantesSection() {
                   />
                 </motion.div>
                 <CardTitle className="text-xl text-gray-800">{integrante.nombre}</CardTitle>
-                <p className="text-blue-600 font-semibold">{integrante.rol}</p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2 text-gray-600">
                     <GraduationCap className="h-4 w-4 text-blue-light" />
-                    <div>
-                      <p className="font-medium">{integrante.carrera}</p>
-                      <p className="text-sm">{integrante.semestre}</p>
-                    </div>
+                    <p className="font-medium">{integrante.carrera}</p>
                   </div>
 
                   <div className="flex items-center space-x-2 text-gray-600">
                     <Mail className="h-4 w-4 text-red-bright" />
                     <p className="text-sm">{integrante.email}</p>
                   </div>
-
-                  <div className="flex items-center space-x-2 text-gray-600">
-                    <Phone className="h-4 w-4 text-blue-medium" />
-                    <p className="text-sm">{integrante.telefono}</p>
-                  </div>
-
-                  <div className="flex items-center space-x-2 text-gray-600">
-                    <MapPin className="h-4 w-4 text-red-dark" />
-                    <p className="text-sm">{integrante.ubicacion}</p>
-                  </div>
-                </div>
-
-                <div className="pt-3 border-t border-gray-200">
-                  <h4 className="font-semibold text-gray-800 mb-2">Especialidad</h4>
-                  <p className="text-sm text-gray-600 leading-relaxed">{integrante.especialidad}</p>
                 </div>
               </CardContent>
             </Card>
@@ -162,19 +95,19 @@ export function IntegrantesSection() {
                 <h4 className="font-semibold text-gray-800 mb-3">Detalles Académicos</h4>
                 <div className="space-y-2 text-gray-600">
                   <p>
-                    <strong>Universidad:</strong> Universidad Tecnológica Nacional
+                    <strong>Universidad:</strong> Universidad Mayor de San Simón
                   </p>
                   <p>
-                    <strong>Facultad:</strong> Ingeniería y Ciencias Aplicadas
+                    <strong>Facultad:</strong> Ciencias y Tecnología
                   </p>
                   <p>
-                    <strong>Materia:</strong> Matemáticas Financieras
+                    <strong>Materia:</strong> Sistemas Económicos 
                   </p>
                   <p>
-                    <strong>Profesor:</strong> Dr. Fernando Martínez González
+                    <strong>Profesor:</strong> Ing. Emir Vargas Peredo
                   </p>
                   <p>
-                    <strong>Período:</strong> Semestre Agosto-Diciembre 2024
+                    <strong>Período:</strong> 2025/1
                   </p>
                 </div>
               </div>
@@ -186,15 +119,6 @@ export function IntegrantesSection() {
                   </p>
                   <p>
                     <strong>Estilos:</strong> Tailwind CSS, Framer Motion
-                  </p>
-                  <p>
-                    <strong>Componentes:</strong> shadcn/ui
-                  </p>
-                  <p>
-                    <strong>Matemáticas:</strong> Cálculos financieros personalizados
-                  </p>
-                  <p>
-                    <strong>Fecha de entrega:</strong> Diciembre 2024
                   </p>
                 </div>
               </div>
