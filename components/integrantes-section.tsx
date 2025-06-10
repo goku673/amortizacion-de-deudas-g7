@@ -22,7 +22,7 @@ export function IntegrantesSection() {
           <CardHeader>
             <CardTitle className="flex items-center space-x-2 text-2xl">
               <Users className="h-8 w-8" />
-              <span>Integrantes del Equipo</span>
+              <span>Integrantes del Equipo Nro.7 sistemas economicos</span>
             </CardTitle>
           </CardHeader>
         </Card>
