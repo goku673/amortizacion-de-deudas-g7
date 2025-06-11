@@ -42,13 +42,13 @@ export function EjemplosResueltosSection() {
         "Con el método alemán, la amortización es constante ($25,000 trimestrales). Las cuotas disminuyen gradualmente de $31,000 a $25,750.",
     },
     {
-      titulo: "Préstamo Empresarial - Método Americano",
+      titulo: "Préstamo Empresarial - Método Francés",
       datos: {
         monto: 100000,
         plazo: 6,
         tasa: 15,
         periodicidad: "semestral",
-        metodo: "Americano",
+        metodo: "Francés",
       },
       solucion: {
         cuotaPeriodica: 7500,

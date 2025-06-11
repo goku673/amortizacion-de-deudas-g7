@@ -33,11 +33,7 @@ export function ManualSection() {
           name: "Método Alemán",
           description:
             "Amortización constante del capital. Las cuotas son decrecientes ya que los intereses disminuyen con el saldo.",
-        },
-        {
-          name: "Método Americano",
-          description: "Solo se pagan intereses durante el período, el capital se paga completo al final.",
-        },
+        }
       ],
     },
     {
