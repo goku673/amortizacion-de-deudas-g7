@@ -360,7 +360,7 @@ export function CalculadoraSection() {
                   <div className="flex items-center space-x-2 mb-2">
                     <DollarSign className="h-5 w-5 text-blue-light" />
                     <span className="text-sm font-medium text-blue-navy">
-                      Cuota Periódica
+                      {metodo === "frances" ? "Cuota fija" : "Amortización constante"}
                     </span>
                   </div>
                   <p className="text-2xl font-bold text-blue-navy">
