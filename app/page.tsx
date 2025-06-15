@@ -57,8 +57,14 @@ export default function Home() {
             >
               <Menu className="h-6 w-6 text-gray-700" />
             </button>
-            <div className="text-center">
-              <h1 className="text-lg font-bold text-blue-medium">AmortCalc</h1>
+            {/* Logo móvil en el centro */}
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-medium to-blue-navy rounded-lg flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-sm">AC</span>
+              </div>
+              <div className="text-center">
+                <h1 className="text-lg font-bold text-blue-medium">AmortCalc</h1>
+              </div>
             </div>
             <div className="w-10" /> {/* Spacer for centering */}
           </div>
@@ -76,12 +82,19 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-2">
-              Calculadora de Amortización de Deudas
-            </h1>
-            <p className="text-sm sm:text-base text-gray-600">
-              Herramienta completa para el cálculo y análisis de amortización de préstamos
-            </p>
+            <div className="flex items-center space-x-4 mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-medium to-blue-navy rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-xl">AC</span>
+              </div>
+              <div>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800">
+                  Calculadora de Amortización de Deudas
+                </h1>
+                <p className="text-sm sm:text-base text-gray-600">
+                  Herramienta completa para el cálculo y análisis de amortización de préstamos
+                </p>
+              </div>
+            </div>
           </motion.header>
 
           <AnimatePresence mode="wait">

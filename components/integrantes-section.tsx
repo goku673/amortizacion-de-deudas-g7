@@ -124,7 +124,7 @@ export function IntegrantesSection() {
                     <strong>Materia:</strong> Sistemas Económicos 
                   </p>
                   <p>
-                    <strong>Profesor:</strong> Ing. Emir Vargas Peredo
+                    <strong>Docente:</strong> Ing. Emir Vargas Peredo
                   </p>
                   <p>
                     <strong>Período:</strong> 2025/1

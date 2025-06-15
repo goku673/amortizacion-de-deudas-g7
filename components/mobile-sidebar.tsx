@@ -31,14 +31,24 @@ export function MobileSidebar({ sections, activeSection, onSectionChange, isOpen
         >
           <div className="p-6">
             <div className="flex items-center justify-between mb-8">
-              <div>
-                <h2 className="text-2xl font-bold text-blue-medium">AmortCalc</h2>
-                <p className="text-sm text-gray-500 mt-1">Sistema de Amortización</p>
+              {/* Logo y título */}
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-medium to-blue-navy rounded-lg flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-lg">AC</span>
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-blue-medium">AmortCalc</h2>
+                  <p className="text-xs text-gray-500">Sistema de Amortización</p>
+                </div>
               </div>
+
               <button onClick={onClose} className="p-2 rounded-lg hover:bg-gray-100 transition-colors">
                 <X className="h-6 w-6 text-gray-600" />
               </button>
             </div>
+
+            {/* Línea decorativa */}
+            <div className="w-full h-px bg-gradient-to-r from-blue-light via-blue-medium to-blue-navy opacity-30 mb-6"></div>
 
             <nav className="space-y-2">
               {sections.map((section, index) => {
@@ -65,6 +75,15 @@ export function MobileSidebar({ sections, activeSection, onSectionChange, isOpen
                 )
               })}
             </nav>
+
+            {/* Footer del sidebar móvil */}
+            <div className="absolute bottom-6 left-6 right-6">
+              <div className="text-center">
+                <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-3"></div>
+                <p className="text-xs text-gray-500">Grupo 7 - Sistemas Económicos</p>
+                <p className="text-xs text-gray-400">UMSS 2025</p>
+              </div>
+            </div>
           </div>
         </motion.aside>
       )}

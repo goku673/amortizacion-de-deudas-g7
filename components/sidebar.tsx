@@ -30,8 +30,19 @@ export function Sidebar({ sections, activeSection, onSectionChange }: SidebarPro
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          <h2 className="text-2xl font-bold text-blue-medium">AmortCalc</h2>
-          <p className="text-sm text-gray-500 mt-1">Sistema de Amortización</p>
+          {/* Logo y título */}
+          <div className="flex items-center space-x-3 mb-2">
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-medium to-blue-navy rounded-lg flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-lg">AC</span>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold text-blue-medium">AmortCalc</h2>
+              <p className="text-xs text-gray-500">Sistema de Amortización</p>
+            </div>
+          </div>
+
+          {/* Línea decorativa */}
+          <div className="w-full h-px bg-gradient-to-r from-blue-light via-blue-medium to-blue-navy opacity-30"></div>
         </motion.div>
 
         <nav className="space-y-2">
@@ -60,6 +71,20 @@ export function Sidebar({ sections, activeSection, onSectionChange }: SidebarPro
             )
           })}
         </nav>
+
+        {/* Footer del sidebar */}
+        <motion.div
+          className="absolute bottom-6 left-6 right-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+        >
+          <div className="text-center">
+            <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-3"></div>
+            <p className="text-xs text-gray-500">Grupo 7 - Sistemas Económicos</p>
+            <p className="text-xs text-gray-400">UMSS 2025</p>
+          </div>
+        </motion.div>
       </div>
     </motion.aside>
   )
