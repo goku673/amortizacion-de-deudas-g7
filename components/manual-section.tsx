@@ -33,7 +33,7 @@ export function ManualSection() {
           name: "Método Alemán",
           description:
             "Amortización constante del capital. Las cuotas son decrecientes ya que los intereses disminuyen con el saldo.",
-        }
+        },
       ],
     },
     {
@@ -98,8 +98,8 @@ export function ManualSection() {
               <div className="relative w-full h-0 pb-[56.25%] bg-gray-800 rounded-lg overflow-hidden">
                 <iframe
                   className="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/vEE-6B1v41E"
-                  title="Tutorial de Calculadora de Amortización"
+                  src="https://www.youtube.com/embed/xXoG6wPM83c"
+                  title="Tutorial de Calculadora de Amortización - Sistema AmorCal"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
@@ -108,11 +108,11 @@ export function ManualSection() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
                 <div className="bg-blue-800 p-4 rounded-lg text-center">
                   <h4 className="font-semibold text-white mb-2">Duración</h4>
-                  <p className="text-blue-200">15 minutos</p>
+                  <p className="text-blue-200">1 minuto</p>
                 </div>
                 <div className="bg-blue-800 p-4 rounded-lg text-center">
-                  <h4 className="font-semibold text-white mb-2">Nivel</h4>
-                  <p className="text-blue-200">Principiante</p>
+                  <h4 className="font-semibold text-white mb-2">Autor</h4>
+                  <p className="text-blue-200">Freddy Zapata</p>
                 </div>
                 <div className="bg-blue-800 p-4 rounded-lg text-center">
                   <h4 className="font-semibold text-white mb-2">Idioma</h4>
