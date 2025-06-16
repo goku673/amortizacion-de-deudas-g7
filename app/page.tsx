@@ -2,14 +2,16 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Calculator, BookOpen, Users, FileText, PenTool, Menu } from "lucide-react"
+import { Calculator, BookOpen, Users, FileText, PenTool, Menu, Download } from "lucide-react"
 import { Sidebar } from "@/components/sidebar"
 import { MobileSidebar } from "@/components/mobile-sidebar"
+import { InstallPrompt } from "@/components/install-prompt"
 import { CalculadoraSection } from "@/components/calculadora-section"
 import { ManualSection } from "@/components/manual-section"
 import { EjemplosResueltosSection } from "@/components/ejemplos-resueltos-section"
 import { EjemplosPropuestosSection } from "@/components/ejemplos-propuestos-section"
 import { IntegrantesSection } from "@/components/integrantes-section"
+import { DownloadSection } from "@/components/download-section"
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("calculadora")
@@ -20,6 +22,7 @@ export default function Home() {
     { id: "manual", title: "Manual de Usuario", icon: BookOpen, component: ManualSection },
     { id: "ejemplos-resueltos", title: "Ejemplos Resueltos", icon: FileText, component: EjemplosResueltosSection },
     { id: "ejemplos-propuestos", title: "Ejemplos Propuestos", icon: PenTool, component: EjemplosPropuestosSection },
+    { id: "descargar", title: "Descargar App", icon: Download, component: DownloadSection },
     { id: "integrantes", title: "Integrantes", icon: Users, component: IntegrantesSection },
   ]
 
@@ -27,7 +30,7 @@ export default function Home() {
 
   const handleSectionChange = (section: string) => {
     setActiveSection(section)
-    setIsMobileMenuOpen(false) // Cerrar menú móvil al cambiar sección
+    setIsMobileMenuOpen(false)
   }
 
   return (
@@ -66,7 +69,7 @@ export default function Home() {
                 <h1 className="text-lg font-bold text-blue-medium">AmortCalc</h1>
               </div>
             </div>
-            <div className="w-10" /> {/* Spacer for centering */}
+            <div className="w-10" />
           </div>
         </div>
 
@@ -110,6 +113,9 @@ export default function Home() {
           </AnimatePresence>
         </motion.div>
       </main>
+
+      {/* Install Prompt */}
+      <InstallPrompt />
 
       {/* Overlay para móvil */}
       {isMobileMenuOpen && (
