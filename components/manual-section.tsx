@@ -105,14 +105,10 @@ export function ManualSection() {
                 ></iframe>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
                 <div className="bg-blue-800 p-4 rounded-lg text-center">
                   <h4 className="font-semibold text-white mb-2">Duración</h4>
-                  <p className="text-blue-200">1 minuto</p>
-                </div>
-                <div className="bg-blue-800 p-4 rounded-lg text-center">
-                  <h4 className="font-semibold text-white mb-2">Autor</h4>
-                  <p className="text-blue-200">Freddy Zapata</p>
+                  <p className="text-blue-200">2 minutos</p>
                 </div>
                 <div className="bg-blue-800 p-4 rounded-lg text-center">
                   <h4 className="font-semibold text-white mb-2">Idioma</h4>
